@@ -2,6 +2,8 @@ Memento
 =========================
 
 Memento is a Meteor package implementation of the Delete-Undo pattern.
+This package provides you with 2 simple methods that will do all the work for you.
+
 
 ## Installation
 
@@ -12,6 +14,7 @@ $ meteor add milant:memento
 ## How to use
 
 Memento provides you with two Methods you need to implement into your code.
+Calling either of the methods requires the client(user) to be logged in to your Meteor app.
 
 1. Memento.remember(col, doc)
 Call this in your remove Method before removing an object.
